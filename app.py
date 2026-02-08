@@ -6,8 +6,10 @@ import re
 
 app = Flask(__name__)
 
-WEKA_JAR = "weka.jar"
-MODEL_FILE = "smoking_relapse.model"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+WEKA_JAR = os.path.join(BASE_DIR, "weka.jar")
+MODEL_FILE = os.path.join(BASE_DIR, "smoking_relapse.model")
 
 def q(v):
     return f"'{v}'"
@@ -115,4 +117,5 @@ def index():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
+
     app.run(host="0.0.0.0", port=port)
