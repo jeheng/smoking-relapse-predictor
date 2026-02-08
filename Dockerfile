@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 # Install Java (required by WEKA)
 RUN apt-get update && \
-    apt-get install -y openjdk-17-jre && \
+    apt-get install -y default-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 # Set Java environment
@@ -22,4 +22,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 10000
 
 # Start Flask using gunicorn
+
 CMD ["gunicorn", "--bind", "0.0.0.0:10000", "app:app"]
