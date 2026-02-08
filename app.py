@@ -100,6 +100,11 @@ def index():
         ]
 
         process = subprocess.run(cmd, capture_output=True, text=True)
+        if process.returncode !=0:
+            return f"""
+            <h2> Java / WEKA Error </h2>
+            <pre>{process.stderr}</pre>
+            """, 500
         output = process.stdout
 
         result, yes_prob, no_prob = parse_weka_output(output)
@@ -119,3 +124,4 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
 
     app.run(host="0.0.0.0", port=port)
+
