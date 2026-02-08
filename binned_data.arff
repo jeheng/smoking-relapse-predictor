@@ -1,0 +1,85 @@
+@relation binned_data
+
+@attribute Age {'Late Working Age','Mid Working Age',Pre-Senior,'Young Adults','Under 18','Early Working Age'}
+@attribute NumberOfSticksPerDay {'Medium Smoker','Heavy Smoker','Light Smoker'}
+@attribute Gender {M,F}
+@attribute CivilStatus {Married,Single}
+@attribute HasInfoAboutCessation {No,Yes}
+@attribute EmploymentStatus {Employed,NotOfficeing,Officeing,Retired}
+@attribute Type {RegularSmoker,SocialSmoker}
+@attribute AgeStarted {Adolescence,Childhood,'Young Adult'}
+@attribute Influence {Curiosity,FamilyInfluence,PeerPressure}
+@attribute Urge {Stressed,Bored,Sad,Angry,Happy}
+@attribute MainAccess {Home,Office,PublicPlace,Others,Bars}
+@attribute Relapsed {YES,NO}
+
+@data
+'Late Working Age','Medium Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,Curiosity,Stressed,Home,YES
+'Mid Working Age','Heavy Smoker',F,Single,No,Employed,RegularSmoker,Adolescence,Curiosity,Bored,Home,YES
+Pre-Senior,'Medium Smoker',M,Married,No,Employed,RegularSmoker,Childhood,FamilyInfluence,Bored,Home,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,PeerPressure,Bored,Office,NO
+'Late Working Age','Medium Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,Curiosity,Stressed,Office,YES
+'Young Adults','Medium Smoker',F,Single,No,NotOfficeing,RegularSmoker,Adolescence,Curiosity,Sad,PublicPlace,NO
+'Young Adults','Light Smoker',F,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Angry,Home,NO
+'Young Adults','Medium Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Angry,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Childhood,PeerPressure,Angry,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Stressed,Others,NO
+'Young Adults','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,Curiosity,Sad,PublicPlace,NO
+'Late Working Age','Light Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',PeerPressure,Happy,Office,NO
+'Mid Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,PeerPressure,Happy,Office,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',PeerPressure,Happy,Office,NO
+Pre-Senior,'Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Childhood,FamilyInfluence,Bored,Home,NO
+'Late Working Age','Heavy Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Others,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Office,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Childhood,PeerPressure,Sad,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Sad,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,Curiosity,Happy,PublicPlace,NO
+'Young Adults','Light Smoker',F,Single,No,Officeing,SocialSmoker,Adolescence,Curiosity,Bored,PublicPlace,YES
+'Young Adults','Light Smoker',F,Single,Yes,Officeing,SocialSmoker,Adolescence,PeerPressure,Sad,Bars,YES
+Pre-Senior,'Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Stressed,Home,YES
+Pre-Senior,'Heavy Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Stressed,Home,YES
+'Early Working Age','Light Smoker',F,Single,No,Officeing,SocialSmoker,Adolescence,PeerPressure,Stressed,Bars,YES
+'Young Adults','Light Smoker',F,Single,No,Employed,SocialSmoker,Adolescence,PeerPressure,Sad,Bars,YES
+Pre-Senior,'Medium Smoker',M,Married,No,Retired,RegularSmoker,Adolescence,FamilyInfluence,Bored,Home,NO
+'Late Working Age','Heavy Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Others,NO
+'Late Working Age','Medium Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Stressed,Home,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,Curiosity,Sad,PublicPlace,NO
+'Young Adults','Light Smoker',F,Single,No,Employed,SocialSmoker,Adolescence,PeerPressure,Sad,Office,YES
+'Young Adults','Light Smoker',F,Single,Yes,Employed,SocialSmoker,Adolescence,PeerPressure,Sad,Office,YES
+'Young Adults','Light Smoker',F,Single,No,Employed,SocialSmoker,Adolescence,Curiosity,Sad,Bars,YES
+'Young Adults','Light Smoker',F,Single,No,Employed,SocialSmoker,Adolescence,Curiosity,Sad,Bars,YES
+'Late Working Age','Medium Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,Curiosity,Stressed,PublicPlace,NO
+'Late Working Age','Light Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',PeerPressure,Happy,Home,NO
+'Mid Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Stressed,Home,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Happy,Office,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Stressed,Office,NO
+'Early Working Age','Light Smoker',F,Single,Yes,Employed,SocialSmoker,Adolescence,Curiosity,Sad,Bars,YES
+'Young Adults','Light Smoker',F,Single,Yes,Employed,SocialSmoker,Adolescence,Curiosity,Sad,Bars,YES
+Pre-Senior,'Light Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Happy,Office,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Happy,Office,NO
+'Mid Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,PeerPressure,Happy,Office,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',PeerPressure,Happy,Office,NO
+'Mid Working Age','Heavy Smoker',F,Single,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Stressed,Others,NO
+'Young Adults','Medium Smoker',F,Married,No,Employed,RegularSmoker,Childhood,FamilyInfluence,Bored,Others,YES
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,PeerPressure,Bored,Office,NO
+'Young Adults','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Young Adults','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,Curiosity,Bored,Bars,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Sad,Others,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,PeerPressure,Happy,PublicPlace,NO
+'Under 18','Light Smoker',M,Single,Yes,NotOfficeing,SocialSmoker,Adolescence,Curiosity,Sad,PublicPlace,NO
+'Late Working Age','Light Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',PeerPressure,Happy,Home,NO
+'Mid Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Home,NO
+'Late Working Age','Medium Smoker',M,Married,No,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Bored,Home,NO
+Pre-Senior,'Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Childhood,FamilyInfluence,Bored,Others,YES
+Pre-Senior,'Medium Smoker',M,Married,No,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Others,YES
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Bored,Office,YES
+'Young Adults','Light Smoker',F,Single,No,Employed,SocialSmoker,Adolescence,Curiosity,Bored,Bars,YES
+'Late Working Age','Light Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Happy,Home,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Happy,Home,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,Adolescence,FamilyInfluence,Happy,Home,NO
+'Late Working Age','Medium Smoker',M,Married,Yes,Employed,RegularSmoker,'Young Adult',FamilyInfluence,Happy,Home,NO
+'Early Working Age','Light Smoker',F,Single,No,Employed,RegularSmoker,Adolescence,Curiosity,Stressed,Office,YES
