@@ -11,7 +11,7 @@
 
     Age:
     <select name="Age" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Late Working Age','Mid Working Age','Pre-Senior','Young Adults','Under 18','Early Working Age'] %}
         <option {% if form_data.get('Age') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -19,7 +19,7 @@
 
     Cigarettes per Day:
     <select name="NumberOfSticksPerDay" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Light Smoker','Medium Smoker','Heavy Smoker'] %}
         <option {% if form_data.get('NumberOfSticksPerDay') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -27,7 +27,7 @@
 
     Gender:
     <select name="Gender" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['M','F'] %}
         <option {% if form_data.get('Gender') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -35,7 +35,7 @@
 
     Civil Status:
     <select name="CivilStatus" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Single','Married'] %}
         <option {% if form_data.get('CivilStatus') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -43,7 +43,7 @@
 
     Has Info About Cessation:
     <select name="HasInfoAboutCessation" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Yes','No'] %}
         <option {% if form_data.get('HasInfoAboutCessation') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -51,7 +51,7 @@
 
     Employment Status:
     <select name="EmploymentStatus" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Employed','Officeing','NotOfficeing','Retired'] %}
         <option {% if form_data.get('EmploymentStatus') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -59,7 +59,7 @@
 
     Smoker Type:
     <select name="Type" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['RegularSmoker','SocialSmoker'] %}
         <option {% if form_data.get('Type') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -67,7 +67,7 @@
 
     Age Started:
     <select name="AgeStarted" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Childhood','Adolescence','Young Adult'] %}
         <option {% if form_data.get('AgeStarted') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -75,7 +75,7 @@
 
     Influence:
     <select name="Influence" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Curiosity','FamilyInfluence','PeerPressure'] %}
         <option {% if form_data.get('Influence') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -83,7 +83,7 @@
 
     Urge:
     <select name="Urge" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Stressed','Bored','Sad','Angry','Happy'] %}
         <option {% if form_data.get('Urge') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
@@ -91,7 +91,7 @@
 
     Main Access:
     <select name="MainAccess" required>
-        <option disabled>-- Select --</option>
+        <option value="" disabled selected hidden>-- Select --</option>
         {% for v in ['Home','Office','PublicPlace','Others','Bars'] %}
         <option {% if form_data.get('MainAccess') == v %}selected{% endif %}>{{ v }}</option>
         {% endfor %}
